@@ -9,34 +9,53 @@
   <body>
     <header>
       <nav aria-label="Hauptnavigation">
-        <a
-          href="index.html"
-          style="color: #fff; font-weight: bold; text-decoration: none"
-          >ToneForge</a
-        >
+        <a href="index.html" class="logo">ToneForge</a>
+        <ul>
+          <li><a href="index.html">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
       </nav>
     </header>
 
     <main>
-      <section id="produkt">
-        <h1>Boutique Tones Vol. 1</h1>
+      <h1>Willkommen bei ToneForge</h1>
+      <p>
+        Hol dir mix-ready Gitarrensounds für dein Homerecording-Setup. Kein
+        stundenlanges Tweaken, einfach Plug & Play.
+      </p>
+
+      <section class="product-card" aria-labelledby="product-title">
+        <h2 id="product-title">Boutique Tones Vol. 1</h2>
         <p>
-          10 mix-ready Presets für deinen Gitarren-Prozessor. Sofortiger
-          digitaler Download.
+          10 fertige Presets für deinen digitalen Audio-Prozessor (inklusive
+          Custom IRs). Von glasklarem Clean bis Modern High-Gain.
         </p>
-        <p>Preis: <strong>15,00 €</strong></p>
+
+        <div class="price">Einmalkauf: <strong>15,00 €</strong></div>
+
         <button id="buy-btn">In den Warenkorb</button>
       </section>
     </main>
 
     <footer>
+      <nav aria-label="Fußzeilennavigation">
+        <ul>
+          <li><a href="lizenz.html">Lizenz</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="kontakt.html">Impressum</a></li>
+          <li><a href="credits.html">Urheberrecht / Credits</a></li>
+          <li><a href="barrierefreiheit.html">Barrierefreiheit</a></li>
+        </ul>
+      </nav>
       <p>&copy; 2026 ToneForge Audio GmbH</p>
     </footer>
 
     <script>
+      // Mocking des Checkout-Prozesses
       document.getElementById("buy-btn").addEventListener("click", function () {
         alert(
-          "Kaufprozess gemockt! Der Artikel wurde in den fiktiven Warenkorb gelegt.",
+          "Warenkorb gemockt! Hier würde der Checkout-Prozess für den digitalen Download starten.",
         );
       });
     </script>
