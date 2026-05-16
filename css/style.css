@@ -6,12 +6,16 @@
   --surface: #1a1a1a;
   --surface-2: #242424;
   --text-color: #e8e8e8;
-  --text-muted: #c0c0c0; /* ← aufgehellt von #b3b3b3 */
-  --accent-color: #e8521a;
-  --accent-hover: #ff6b35;
-  --accent-dim: rgba(232, 82, 26, 0.15);
-  --focus-color: #ff9944;
-  --green: #4caf50;
+  --text-muted: #c0c0c0; /* Aufgehellt für besseren Kontrast */
+
+  /* NEU: Zwei Orange-Töne für perfekten Kontrast */
+  --accent-text: #ff9d73; /* Helles Orange für Text auf dunklem Bg (Besteht 4.5:1) */
+  --accent-btn-bg: #cc4515; /* Dunkles Orange für Buttons mit weißem Text (Besteht 4.5:1) */
+  --accent-btn-hover: #a6350f; /* Noch dunkler für Hover */
+
+  --accent-dim: rgba(255, 157, 115, 0.15);
+  --focus-color: #ffb899;
+  --green: #6fcf73; /* Aufgehelltes Grün */
   --border: #2e2e2e;
   --radius: 6px;
   --radius-lg: 12px;
@@ -49,13 +53,13 @@ img {
 }
 
 a {
-  color: #ff8c5a; /* ← helleres Orange für Links: besserer Kontrast */
+  color: var(--accent-text);
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: color var(--transition);
 }
 a:hover {
-  color: var(--accent-hover);
+  color: #ffb899;
 }
 
 /* ── Skip Link (WCAG 2.4.1) ──────────────────────── */
@@ -64,11 +68,11 @@ a:hover {
   top: -100px;
   left: 1rem;
   padding: 0.75rem 1.25rem;
-  background: #fff; /* ← weißer Hintergrund */
-  color: #0e0e0e; /* ← schwarzer Text: 19:1 Kontrast */
+  background: #ffffff; /* Weißer Bg */
+  color: #000000; /* Schwarzer Text (perfekter Kontrast) */
   font-weight: 700;
   border-radius: var(--radius);
-  border: 2px solid var(--accent-color); /* ← orange Rand als Akzent */
+  border: 2px solid var(--accent-btn-bg);
   z-index: 9999;
   text-decoration: none;
   transition: top 0.2s;
@@ -116,7 +120,7 @@ header {
   line-height: 1;
 }
 .logo span {
-  color: #ff8c5a; /* ← helleres Orange */
+  color: var(--accent-text);
 }
 .logo:hover {
   color: #fff;
@@ -137,15 +141,15 @@ nav a {
   padding: 0.45rem 0.9rem;
   border-radius: var(--radius);
   transition:
-    color var(--transition),
-    background var(--transition);
+    background var(--transition),
+    color var(--transition);
 }
 nav a:hover {
   color: var(--text-color);
   background: var(--surface-2);
 }
 nav a[aria-current="page"] {
-  color: #ff8c5a; /* ← helleres Orange für aktiven Nav-Link */
+  color: var(--accent-text);
   background: var(--accent-dim);
 }
 
@@ -228,7 +232,7 @@ li {
 .badge {
   display: inline-block;
   background: var(--surface-2);
-  color: #ffb899; /* ← helles Orange: guter Kontrast auf dunklem Bg */
+  color: var(--accent-text);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -236,7 +240,7 @@ li {
   padding: 0.25rem 0.75rem;
   border-radius: 99px;
   margin-bottom: 1rem;
-  border: 1px solid rgba(232, 82, 26, 0.5);
+  border: 1px solid rgba(255, 157, 115, 0.4);
 }
 
 .product-meta {
@@ -256,7 +260,7 @@ li {
 .price {
   font-family: var(--font-display);
   font-size: 2rem;
-  color: #6fcf73; /* ← helleres Grün für besseren Kontrast */
+  color: var(--green);
   letter-spacing: 0.03em;
   margin: 1.25rem 0;
 }
@@ -273,8 +277,10 @@ button,
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: #cc4515; /* ← dunkleres Orange: 4.7:1 mit weiß ✅ */
-  color: #fff;
+  background-color: var(
+    --accent-btn-bg
+  ); /* Dunkleres Orange für Kontrast mit Weiß */
+  color: #ffffff;
   border: none;
   padding: 0.75rem 1.75rem;
   font-family: var(--font-body);
@@ -290,7 +296,7 @@ button,
 }
 button:hover,
 .btn:hover {
-  background-color: #b33f12; /* ← noch dunkler für Hover: 5.8:1 ✅ */
+  background-color: var(--accent-btn-hover);
   transform: translateY(-1px);
 }
 button:active,
@@ -308,7 +314,7 @@ button:active,
 label {
   font-weight: 500;
   font-size: 0.9rem;
-  color: var(--text-color); /* ← volle Textfarbe statt muted */
+  color: var(--text-color);
   letter-spacing: 0.02em;
 }
 
@@ -327,7 +333,7 @@ select {
 }
 input:hover,
 textarea:hover {
-  border-color: #444;
+  border-color: #555;
 }
 textarea {
   resize: vertical;
@@ -372,12 +378,12 @@ textarea {
 }
 .status-partial {
   background: rgba(255, 180, 0, 0.15);
-  color: #ffd166; /* ← helleres Gelb: besser lesbar */
+  color: #ffd166;
   border: 1px solid rgba(255, 180, 0, 0.4);
 }
 .status-ok {
   background: rgba(76, 175, 80, 0.15);
-  color: #6fcf73; /* ← helleres Grün */
+  color: var(--green);
   border: 1px solid rgba(76, 175, 80, 0.4);
 }
 
@@ -400,8 +406,8 @@ textarea {
 .brand-number {
   font-family: var(--font-display);
   font-size: 2.5rem;
-  color: #ff8c5a; /* ← helleres Orange */
-  opacity: 0.5;
+  color: var(--accent-text); /* Helles Orange */
+  opacity: 0.6;
   line-height: 1;
 }
 .brand-wordmark {
@@ -432,12 +438,12 @@ textarea {
   border-bottom: none;
 }
 .feature-list .icon-ok {
-  color: #6fcf73; /* ← helleres Grün */
+  color: var(--green);
   flex-shrink: 0;
   margin-top: 2px;
 }
 .feature-list .icon-no {
-  color: #ff8080; /* ← helleres Rot */
+  color: #ff8080;
   flex-shrink: 0;
   margin-top: 2px;
 }
@@ -524,7 +530,7 @@ footer nav a:hover {
   color: var(--text-color);
 }
 footer nav a[aria-current="page"] {
-  color: #ff8c5a; /* ← helleres Orange */
+  color: var(--accent-text);
   background: transparent;
 }
 .footer-copy {
@@ -546,7 +552,7 @@ footer nav a[aria-current="page"] {
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #ff8c5a; /* ← helleres Orange für besseren Kontrast */
+  color: var(--accent-text);
   margin-bottom: 0.5rem;
 }
 
