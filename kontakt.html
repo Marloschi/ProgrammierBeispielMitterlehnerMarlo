@@ -3,212 +3,209 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kontakt & Impressum | ToneForge</title>
+    <title>Kontakt &amp; Impressum | ToneForge</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
+
     <header>
-      <nav aria-label="Hauptnavigation">
-        <a href="index.html" class="logo">ToneForge</a>
-        <ul>
-          <li><a href="index.html">Shop</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
-        </ul>
-      </nav>
+      <div class="nav-inner">
+        <a
+          href="index.html"
+          class="logo"
+          aria-label="ToneForge – Zur Startseite"
+          >Tone<span>Forge</span></a
+        >
+        <nav aria-label="Hauptnavigation">
+          <ul>
+            <li><a href="index.html">Shop</a></li>
+            <li><a href="about.html">Über Uns</a></li>
+            <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <h1>Kontakt & Impressum</h1>
-      <p>
-        Hast du Fragen zu unseren Presets oder brauchst Support für dein Setup?
-        Schreib uns einfach eine Nachricht oder wirf einen Blick in unser
-        gesetzliches Impressum.
+    <main id="main-content">
+      <p class="section-label">Kontakt</p>
+      <h1>Kontakt &amp; Impressum</h1>
+      <p class="intro">
+        Fragen zu unseren Presets oder Support für dein Setup? Schreib uns –
+        oder wirf einen Blick in unser gesetzliches Impressum.
       </p>
 
-      <section
-        class="product-card"
-        style="margin-top: 2rem"
-        aria-labelledby="contact-heading"
-      >
+      <section class="card" aria-labelledby="contact-heading">
         <h2 id="contact-heading">Kontaktformular</h2>
         <form
           id="contact-form"
+          class="contact-form"
           action="#"
           method="POST"
-          style="
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            max-width: 500px;
-          "
+          novalidate
         >
-          <div>
-            <label
-              Improvement-hint="Barrierefrei durch explizites for-Attribut"
-              for="name"
-              style="display: block; margin-bottom: 5px; font-weight: bold"
-              >Name:</label
-            >
+          <div class="form-group">
+            <label for="name">Name <span aria-hidden="true">*</span></label>
             <input
               type="text"
               id="name"
               name="name"
               required
-              style="
-                width: 100%;
-                padding: 8px;
-                border-radius: 4px;
-                border: 1px solid #333;
-                background: #222;
-                color: #fff;
-              "
+              autocomplete="name"
+              aria-required="true"
             />
           </div>
-
-          <div>
-            <label
-              for="email"
-              style="display: block; margin-bottom: 5px; font-weight: bold"
-              >E-Mail-Adresse:</label
+          <div class="form-group">
+            <label for="email"
+              >E-Mail-Adresse <span aria-hidden="true">*</span></label
             >
             <input
               type="email"
               id="email"
               name="email"
               required
-              style="
-                width: 100%;
-                padding: 8px;
-                border-radius: 4px;
-                border: 1px solid #333;
-                background: #222;
-                color: #fff;
-              "
+              autocomplete="email"
+              aria-required="true"
             />
           </div>
-
-          <div>
-            <label
-              for="message"
-              style="display: block; margin-bottom: 5px; font-weight: bold"
-              >Deine Nachricht:</label
+          <div class="form-group">
+            <label for="message"
+              >Deine Nachricht <span aria-hidden="true">*</span></label
             >
             <textarea
               id="message"
               name="message"
               rows="5"
               required
-              style="
-                width: 100%;
-                padding: 8px;
-                border-radius: 4px;
-                border: 1px solid #333;
-                background: #222;
-                color: #fff;
-                font-family: Arial, sans-serif;
-              "
+              aria-required="true"
             ></textarea>
           </div>
-
-          <button type="submit" style="align-self: flex-start">
-            Nachricht senden
-          </button>
+          <p class="form-note"><span aria-hidden="true">*</span> Pflichtfeld</p>
+          <button type="submit">Nachricht senden</button>
         </form>
       </section>
 
-      <section class="product-card" aria-labelledby="impressum-heading">
+      <section class="card" aria-labelledby="impressum-heading">
         <h2 id="impressum-heading">Impressum</h2>
         <p>
-          Gesetzliche Pflichtangaben gemäß § 5 E-Commerce-Gesetz (ECG), § 14
-          Unternehmensgesetzbuch (UGB), § 63 Gewerbeordnung (GewO) und
-          Offenlegungspflicht nach § 25 Mediengesetz (MedienG).
+          Pflichtangaben gemäß § 5 E-Commerce-Gesetz (ECG), § 14
+          Unternehmensgesetzbuch (UGB), § 63 Gewerbeordnung (GewO) und § 25
+          Mediengesetz (MedienG).
+        </p>
+        <table class="info-table" aria-label="Unternehmensangaben">
+          <tbody>
+            <tr>
+              <th scope="row">Unternehmen</th>
+              <td>ToneForge Audio GmbH</td>
+            </tr>
+            <tr>
+              <th scope="row">Rechtsform</th>
+              <td>Gesellschaft mit beschränkter Haftung (GmbH)</td>
+            </tr>
+            <tr>
+              <th scope="row">Gegenstand</th>
+              <td>
+                Entwicklung und Vertrieb digitaler Audiosoftware und
+                Klangdateien
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Sitz</th>
+              <td>Musterstraße 42 / WG 3, 1010 Wien, Österreich</td>
+            </tr>
+            <tr>
+              <th scope="row">Firmenbuchnummer</th>
+              <td>FN 123456 y (fiktiv)</td>
+            </tr>
+            <tr>
+              <th scope="row">Firmenbuchgericht</th>
+              <td>Handelsgericht Wien</td>
+            </tr>
+            <tr>
+              <th scope="row">UID-Nummer</th>
+              <td>ATU67890123 (fiktiv)</td>
+            </tr>
+            <tr>
+              <th scope="row">E-Mail</th>
+              <td>
+                <a href="mailto:office@toneforge.at">office@toneforge.at</a>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Telefon</th>
+              <td>+43 1 234 56 78</td>
+            </tr>
+            <tr>
+              <th scope="row">Mitgliedschaft</th>
+              <td>Wirtschaftskammer Österreich (WKO), Fachgruppe UBIT</td>
+            </tr>
+            <tr>
+              <th scope="row">Berufsrecht</th>
+              <td>
+                Gewerbeordnung (GewO), abrufbar unter
+                <a
+                  href="https://www.ris.bka.gv.at"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >ris.bka.gv.at</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Aufsichtsbehörde</th>
+              <td>Magistratisches Bezirksamt des I. Bezirkes</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3 class="mt-lg">Offenlegung nach § 25 MedienG</h3>
+        <p>
+          Diese Website dient der Bewerbung und dem Vertrieb selbst erstellter
+          digitaler Gitarren-Presets, Audio-Konfigurationen und zugehöriger
+          Dokumentationen für Homerecording und Live-Anwendungen.
         </p>
 
+        <h3 class="mt-lg">EU-Streitschlichtung</h3>
         <p>
-          <strong>Unternehmensbezeichnung:</strong> ToneForge Audio GmbH<br />
-          <strong>Rechtsform:</strong> Gesellschaft mit beschränkter Haftung
-          (GmbH)<br />
-          <strong>Unternehmensgegenstand:</strong> Entwicklung und Vertrieb von
-          digitaler Audiosoftware und Klangdateien<br />
-          <strong>Sitz:</strong> Musterstraße 42 / WG 3, 1010 Wien, Österreich
-        </p>
-
-        <p>
-          <strong>Firmenbuchnummer:</strong> FN 123456 y (fiktiv)<br />
-          <strong>Firmenbuchgericht:</strong> Handelsgericht Wien<br />
-          <strong>UID-Nummer:</strong> ATU67890123 (fiktiv)
-        </p>
-
-        <p>
-          <strong>Kontaktdaten:</strong><br />
-          E-Mail: office@toneforge.at<br />
-          Telefon: +43 1 234 56 78
-        </p>
-
-        <p>
-          <strong>Mitgliedschaften:</strong> Mitglied der Wirtschaftskammer
-          Österreich (WKO), Fachgruppe Unternehmensberatung, Buchhaltung und
-          Informationstechnologie (UBIT).<br />
-          <strong>Anwendbares Berufsrecht:</strong> Gewerbeordnung (GewO),
-          abrufbar unter
-          <a
-            href="https://www.ris.bka.gv.at"
-            target="_blank"
-            rel="noopener"
-            style="color: var(--accent-color)"
-            >www.ris.bka.gv.at</a
-          ><br />
-          <strong>Aufsichtsbehörde:</strong> Magistratisches Bezirksamt des I.
-          Bezirkes
-        </p>
-
-        <p>
-          <strong>Offenlegung nach § 25 MedienG (Blattlinie):</strong><br />
-          Diese Website dient der Bewerbung und dem Vertrieb von selbst
-          erstellten digitalen Gitarren-Presets, Audio-Konfigurationen und
-          zugehörigen Dokumentationen für Homerecording und Live-Anwendungen.
-        </p>
-
-        <p>
-          <strong>EU-Streitschlichtung:</strong><br />
-          Verbraucher haben die Möglichkeit, Beschwerden an die
-          Online-Streitbeilegungsplattform der EU zu richten:
+          Verbraucher können Beschwerden an die
+          EU-Online-Streitbeilegungsplattform richten:
           <a
             href="https://ec.europa.eu/consumers/odr"
             target="_blank"
-            rel="noopener"
-            style="color: var(--accent-color)"
-            >https://ec.europa.eu/consumers/odr</a
-          >. Sie können allfällige Beschwerden auch an die oben angegebene
-          E-Mail-Adresse richten.
+            rel="noopener noreferrer"
+            >ec.europa.eu/consumers/odr</a
+          >. Beschwerden können auch direkt an die oben angegebene
+          E-Mail-Adresse gerichtet werden.
         </p>
       </section>
     </main>
 
     <footer>
-      <nav aria-label="Fußzeilennavigation">
-        <ul>
-          <li><a href="lizenz.html">Lizenz</a></li>
-          <li><a href="datenschutz.html">Datenschutz</a></li>
-          <li><a href="kontakt.html" aria-current="page">Impressum</a></li>
-          <li><a href="credits.html">Urheberrecht / Credits</a></li>
-          <li><a href="barrierefreiheit.html">Barrierefreiheit</a></li>
-        </ul>
-      </nav>
-      <p>&copy; 2026 ToneForge Audio GmbH</p>
+      <div class="footer-inner">
+        <nav aria-label="Fußzeilennavigation">
+          <ul>
+            <li><a href="lizenz.html">Lizenz</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="kontakt.html" aria-current="page">Impressum</a></li>
+            <li><a href="credits.html">Credits</a></li>
+            <li><a href="barrierefreiheit.html">Barrierefreiheit</a></li>
+          </ul>
+        </nav>
+        <p class="footer-copy">
+          &copy; 2026 ToneForge Audio GmbH · Wien, Österreich
+        </p>
+      </div>
     </footer>
 
     <script>
-      // Mocking des Formular-Absendeprozesses
       document
         .getElementById("contact-form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault(); // Verhindert das echte Neuladen der Seite
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
           alert(
             "Kontaktformular gemockt! In einer echten Umgebung würde deine Nachricht jetzt verschickt werden.",
           );
-          this.reset(); // Leert das Formular nach dem Klick
+          this.reset();
         });
     </script>
   </body>

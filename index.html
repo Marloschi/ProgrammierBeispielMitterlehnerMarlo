@@ -7,69 +7,89 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
+
     <header>
-      <nav aria-label="Hauptnavigation">
-        <a href="index.html" class="logo">ToneForge</a>
-        <ul>
-          <li><a href="index.html" aria-current="page">Shop</a></li>
-          <li><a href="about.html">Über Uns</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-      </nav>
+      <div class="nav-inner">
+        <a
+          href="index.html"
+          class="logo"
+          aria-label="ToneForge – Zur Startseite"
+          >Tone<span>Forge</span></a
+        >
+        <nav aria-label="Hauptnavigation">
+          <ul>
+            <li><a href="index.html" aria-current="page">Shop</a></li>
+            <li><a href="about.html">Über Uns</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <h1>Willkommen bei ToneForge</h1>
-      <p>
-        Hol dir mix-ready Gitarrensounds für dein Homerecording-Setup. Kein
-        stundenlanges Tweaken, einfach Plug & Play.
+    <main id="main-content">
+      <p class="section-label">Homerecording · Gitarren-Presets</p>
+      <h1>Boutique Tones Vol.&nbsp;1</h1>
+      <p class="intro">
+        Mix-ready Gitarrensounds für dein Homerecording-Setup – kein
+        stundenlanges Tweaken, einfach Plug &amp; Play.
       </p>
 
-      <section class="product-card" aria-labelledby="product-title">
-        <div style="margin-bottom: 1.5rem; text-align: center">
-          <img
-            src="assets/preset-pack-cover.jpg"
-            alt="Boutique Tones Vol. 1 Produkt-Cover: Gitarren im Studio"
-            style="
-              max-width: 100%;
-              height: auto;
-              border-radius: 4px;
-              max-height: 300px;
-              object-fit: cover;
-            "
-          />
+      <article class="product-card" aria-labelledby="product-title">
+        <img
+          class="product-cover"
+          src="assets/img/product-cover.jpg"
+          alt="Mehrere Gitarren und ein Keyboard in einem Homerecording-Studio, Mikrofon auf einem Holztisch, warmes Gegenlicht"
+          width="900"
+          height="320"
+        />
+        <div class="product-body">
+          <span class="badge">Digitaler Download · Einmalkauf</span>
+          <h2 id="product-title">Boutique Tones Vol. 1</h2>
+          <p>
+            10 fertig konfigurierte Presets für deinen digitalen Audio-Prozessor
+            (z.&nbsp;B. Fractal FM3/AX8), inklusive 5 Custom Impulse Responses
+            (IRs). Von glasklarem Clean über Crunch bis Modern High-Gain – alle
+            Sounds sind sofort aufnahmebereit.
+          </p>
+          <div class="product-meta" aria-label="Produktdetails">
+            <span>🎸 10 Presets (.syx)</span>
+            <span>📁 5 Custom IRs (.wav)</span>
+            <span>📄 Setup-Guide (PDF)</span>
+            <span>🔄 Royalty-free</span>
+          </div>
+          <p class="price" aria-label="Preis: 15 Euro einmalig">
+            Einmalkauf: <strong>15,00 €</strong>
+          </p>
+          <p class="price-note">
+            inkl. USt. · Sofort-Download nach Kauf · lebenslange Nutzung
+          </p>
+          <button id="buy-btn" type="button">In den Warenkorb legen</button>
         </div>
-
-        <h2 id="product-title">Boutique Tones Vol. 1</h2>
-        <p>
-          10 fertige Presets für deinen digitalen Audio-Prozessor (inklusive
-          Custom IRs). Von glasklarem Clean bis Modern High-Gain.
-        </p>
-
-        <div class="price">Einmalkauf: <strong>15,00 €</strong></div>
-
-        <button id="buy-btn">In den Warenkorb</button>
-      </section>
+      </article>
     </main>
 
     <footer>
-      <nav aria-label="Fußzeilennavigation">
-        <ul>
-          <li><a href="lizenz.html">Lizenz</a></li>
-          <li><a href="datenschutz.html">Datenschutz</a></li>
-          <li><a href="kontakt.html">Impressum</a></li>
-          <li><a href="credits.html">Urheberrecht / Credits</a></li>
-          <li><a href="barrierefreiheit.html">Barrierefreiheit</a></li>
-        </ul>
-      </nav>
-      <p>&copy; 2026 ToneForge Audio GmbH</p>
+      <div class="footer-inner">
+        <nav aria-label="Fußzeilennavigation">
+          <ul>
+            <li><a href="lizenz.html">Lizenz</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="kontakt.html">Impressum</a></li>
+            <li><a href="credits.html">Credits</a></li>
+            <li><a href="barrierefreiheit.html">Barrierefreiheit</a></li>
+          </ul>
+        </nav>
+        <p class="footer-copy">
+          &copy; 2026 ToneForge Audio GmbH · Wien, Österreich
+        </p>
+      </div>
     </footer>
 
     <script>
-      // Mocking des Checkout-Prozesses
       document.getElementById("buy-btn").addEventListener("click", function () {
         alert(
-          "Warenkorb gemockt! Hier würde der Checkout-Prozess für den digitalen Download starten.",
+          "Warenkorb gemockt! In einer echten Umgebung würde hier der Checkout-Prozess starten.",
         );
       });
     </script>

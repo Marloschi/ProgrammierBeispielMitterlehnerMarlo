@@ -3,95 +3,276 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Urheberrecht & Lizenzen | ToneForge</title>
+    <title>Urheberrecht &amp; Credits | ToneForge</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
+
     <header>
-      <nav aria-label="Hauptnavigation">
-        <a href="index.html" class="logo">ToneForge</a>
-        <ul>
-          <li><a href="index.html">Shop</a></li>
-          <li><a href="about.html">Über Uns</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-      </nav>
+      <div class="nav-inner">
+        <a
+          href="index.html"
+          class="logo"
+          aria-label="ToneForge – Zur Startseite"
+          >Tone<span>Forge</span></a
+        >
+        <nav aria-label="Hauptnavigation">
+          <ul>
+            <li><a href="index.html">Shop</a></li>
+            <li><a href="about.html">Über Uns</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <h1>Urheberrechtshinweise & Medializenzen</h1>
-      <p>
-        Nachfolgend sind alle auf dieser Website verwendeten Medienarten sowie
-        deren Quellen, Urheber und Lizenzen dokumentiert.
+    <main id="main-content">
+      <p class="section-label">Rechtliches</p>
+      <h1>Urheberrechtshinweise &amp; Medienlizenzen</h1>
+      <p class="intro">
+        Nachfolgend sind alle auf dieser Website verwendeten Medien sowie deren
+        Quellen, Urheber und Lizenzen vollständig dokumentiert.
       </p>
 
-      <section class="product-card" style="margin-top: 1.5rem">
-        <h2>1. Bilder & Grafiken</h2>
-        <ul>
-          <li>
-            <strong>Produkt-Cover (preset-pack-cover.jpg):</strong><br />
-            <em>Quelle:</em> Unsplash<br />
-            <em>Urheber:</em> Wes Hicks<br />
-            <em>Lizenz:</em> Unsplash-Lizenz (Kostenlose kommerzielle Nutzung)
-          </li>
-          <li style="margin-top: 1rem">
-            <strong>Logo (logo-plektrum.svg):</strong><br />
-            <em>Quelle:</em> Pixabay<br />
-            <em>Lizenz:</em> Pixabay-Lizenz (Kostenlose kommerzielle Nutzung)
-          </li>
-        </ul>
+      <section class="card" aria-labelledby="bilder-heading">
+        <h2 id="bilder-heading">1. Bilder &amp; Grafiken</h2>
+        <table class="credits-table" aria-label="Bildquellen und Lizenzen">
+          <thead>
+            <tr>
+              <th scope="col">Datei / Verwendung</th>
+              <th scope="col">Quelle &amp; Urheber</th>
+              <th scope="col">Lizenz</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>Produkt-Cover</strong><br />
+                <small
+                  >Gitarren im Homerecording-Studio<br />Verwendet auf:
+                  index.html</small
+                >
+              </td>
+              <td>
+                Plattform:
+                <a
+                  href="https://unsplash.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Unsplash</a
+                ><br />
+                Urheber:
+                <a
+                  href="https://unsplash.com/@sickhews"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Wes Hicks</a
+                ><br />
+                <a
+                  href="https://unsplash.com/de/fotos/mehrere-gitarren-neben-dem-beistelltisch-MEL-jJnm7RQ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Direktlink zum Bild</a
+                >
+              </td>
+              <td>
+                <a
+                  href="https://unsplash.com/de/lizenz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Unsplash-Lizenz</a
+                ><br />
+                <small
+                  >Kostenlose kommerzielle Nutzung, keine Namensnennung
+                  erforderlich.</small
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Logo / Bildmarke</strong><br />
+                <small
+                  >Plektrum-Icon (SVG)<br />Verwendet auf: about.html</small
+                >
+              </td>
+              <td>
+                Plattform:
+                <a
+                  href="https://pixabay.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Pixabay</a
+                ><br />
+                <a
+                  href="https://pixabay.com/de/vectors/plektrum-gitarre-instrument-musik-148272/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Direktlink zur Grafik</a
+                >
+              </td>
+              <td>
+                <a
+                  href="https://pixabay.com/de/service/license-summary/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Pixabay-Lizenz</a
+                ><br />
+                <small
+                  >Kostenlose kommerzielle Nutzung, keine Namensnennung
+                  erforderlich.</small
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
-      <section class="product-card">
-        <h2>2. Musik & Soundeffekte</h2>
-        <ul>
-          <li>
-            <strong>Hörmarke (soundmarke.mp3):</strong><br />
-            <em>Quelle:</em> Pixabay<br />
-            <em>Lizenz:</em> Pixabay-Lizenz (Kostenlose kommerzielle Nutzung)
-          </li>
-        </ul>
+      <section class="card" aria-labelledby="audio-heading">
+        <h2 id="audio-heading">2. Musik &amp; Soundeffekte</h2>
+        <table class="credits-table" aria-label="Audioquellen und Lizenzen">
+          <thead>
+            <tr>
+              <th scope="col">Datei / Verwendung</th>
+              <th scope="col">Quelle</th>
+              <th scope="col">Lizenz</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>Hörmarke (soundmarke.mp3)</strong><br />
+                <small
+                  >Atmosphärischer Gitarren-Akkord<br />Verwendet auf:
+                  about.html</small
+                >
+              </td>
+              <td>
+                Plattform:
+                <a
+                  href="https://pixabay.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Pixabay</a
+                ><br />
+                <a
+                  href="https://pixabay.com/sound-effects/musical-guitar-g-strum-508233/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Direktlink zum Sound</a
+                >
+              </td>
+              <td>
+                <a
+                  href="https://pixabay.com/de/service/license-summary/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Pixabay-Lizenz</a
+                ><br />
+                <small
+                  >Kostenlose kommerzielle Nutzung, keine Namensnennung
+                  erforderlich.</small
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
-      <section class="product-card">
-        <h2>3. Schriftarten (Fonts)</h2>
-        <ul>
-          <li>
-            <strong>Systemschriften:</strong> Diese Website verwendet
-            standardisierte Systemschriften (Arial, Helvetica, sans-serif). Es
-            werden keine externen Webfonts eingebunden, wodurch keine
-            gesonderten Drittlizenzen erforderlich sind.
-          </li>
-        </ul>
+      <section class="card" aria-labelledby="fonts-heading">
+        <h2 id="fonts-heading">3. Schriftarten (Fonts)</h2>
+        <table class="credits-table" aria-label="Schriftartenlizenzen">
+          <thead>
+            <tr>
+              <th scope="col">Schriftart</th>
+              <th scope="col">Quelle</th>
+              <th scope="col">Lizenz</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>Bebas Neue</strong><br /><small
+                  >Überschriften und Logo</small
+                >
+              </td>
+              <td>
+                <a
+                  href="https://fonts.google.com/specimen/Bebas+Neue"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Google Fonts</a
+                >
+              </td>
+              <td>
+                <a
+                  href="https://scripts.sil.org/OFL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >SIL Open Font License (OFL)</a
+                ><br />
+                <small>Kostenlose kommerzielle Nutzung erlaubt.</small>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>DM Sans</strong><br /><small
+                  >Fließtext und UI-Elemente</small
+                >
+              </td>
+              <td>
+                <a
+                  href="https://fonts.google.com/specimen/DM+Sans"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Google Fonts</a
+                >
+              </td>
+              <td>
+                <a
+                  href="https://scripts.sil.org/OFL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >SIL Open Font License (OFL)</a
+                ><br />
+                <small>Kostenlose kommerzielle Nutzung erlaubt.</small>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
-      <section class="product-card">
-        <h2>4. Texte</h2>
-        <ul>
-          <li>
-            <strong>Webseitentexte & Rechtstexte:</strong> Alle redaktionellen
-            Texte, Produktbeschreibungen sowie die Nutzungsbedingungen und
-            Datenschutzerklärungen wurden eigenständig verfasst.
-          </li>
-        </ul>
+      <section class="card" aria-labelledby="texte-heading">
+        <h2 id="texte-heading">4. Texte</h2>
+        <p>
+          Alle redaktionellen Texte, Produktbeschreibungen, die
+          Datenschutzerklärung, die Lizenzvereinbarung, das Impressum, die
+          Barrierefreiheitserklärung und diese Urheberrechtsseite wurden
+          eigenständig verfasst. Es wurden keine urheberrechtlich geschützten
+          Texte Dritter übernommen.
+        </p>
+        <p>
+          <strong>Urheber:</strong> ToneForge Audio GmbH, Wien &copy; 2026<br />
+          Alle Rechte vorbehalten, soweit nicht anders angegeben.
+        </p>
       </section>
     </main>
 
     <footer>
-      <nav aria-label="Fußzeilennavigation">
-        <ul>
-          <li><a href="lizenz.html">Lizenz</a></li>
-          <li><a href="datenschutz.html">Datenschutz</a></li>
-          <li><a href="kontakt.html">Impressum</a></li>
-          <li>
-            <a href="credits.html" aria-current="page"
-              >Urheberrecht / Credits</a
-            >
-          </li>
-          <li><a href="barrierefreiheit.html">Barrierefreiheit</a></li>
-        </ul>
-      </nav>
-      <p>&copy; 2026 ToneForge Audio GmbH</p>
+      <div class="footer-inner">
+        <nav aria-label="Fußzeilennavigation">
+          <ul>
+            <li><a href="lizenz.html">Lizenz</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="kontakt.html">Impressum</a></li>
+            <li><a href="credits.html" aria-current="page">Credits</a></li>
+            <li><a href="barrierefreiheit.html">Barrierefreiheit</a></li>
+          </ul>
+        </nav>
+        <p class="footer-copy">
+          &copy; 2026 ToneForge Audio GmbH · Wien, Österreich
+        </p>
+      </div>
     </footer>
   </body>
 </html>

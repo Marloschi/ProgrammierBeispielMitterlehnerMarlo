@@ -3,106 +3,210 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Über Uns | ToneForge Markenwelt</title>
+    <title>Über Uns | ToneForge</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
+
     <header>
-      <nav aria-label="Hauptnavigation">
-        <a href="index.html" class="logo">ToneForge</a>
-        <ul>
-          <li><a href="index.html">Shop</a></li>
-          <li><a href="about.html" aria-current="page">Über Uns</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-      </nav>
+      <div class="nav-inner">
+        <a
+          href="index.html"
+          class="logo"
+          aria-label="ToneForge – Zur Startseite"
+          >Tone<span>Forge</span></a
+        >
+        <nav aria-label="Hauptnavigation">
+          <ul>
+            <li><a href="index.html">Shop</a></li>
+            <li><a href="about.html" aria-current="page">Über Uns</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
+    <main id="main-content">
+      <p class="section-label">Das Unternehmen</p>
       <h1>Über ToneForge</h1>
-      <p>
-        ToneForge ist ein Projekt, das aus der praktischen Arbeit mit digitalen
-        Audio-Workstations (DAWs) und Gitarren-Prozessoren entstanden ist. Unser
-        Fokus liegt auf der Entwicklung von sofort einsatzbaren Presets
-        ("mix-ready"), die den Workflow im Homerecording-Bereich erleichtern und
-        den Zeitaufwand für die Konfiguration reduzieren.
+      <p class="intro">
+        ToneForge ist ein Wiener Start-up, das aus der täglichen Arbeit mit
+        digitalen Audio-Workstations und Gitarren-Prozessoren entstanden ist.
+        Unser Fokus: sofort einsetzbare, mix-ready Presets, die den Workflow im
+        Homerecording deutlich vereinfachen.
       </p>
 
-      <section class="product-card" style="margin-top: 2rem">
-        <h2>Unsere Markenformen (Nizza-Klasse 9)</h2>
+      <section class="card" aria-labelledby="marken-heading">
+        <h2 id="marken-heading">Unsere Markenformen</h2>
         <p>
-          Die vertriebenen digitalen Presets und Audio-Dateien sind der
-          <strong>Nizza-Klasse 9</strong> zuzuordnen. Folgende drei Markenformen
-          definieren unseren Auftritt:
+          ToneForge tritt in drei eigenständigen Markenformen auf. Wortmarke und
+          Wortbildmarke gelten gemäß Aufgabenstellung als eine Markenform.
         </p>
 
+        <div class="brand-grid">
+          <div class="brand-item">
+            <div class="brand-number">01</div>
+            <h3>Wortmarke: „ToneForge"</h3>
+            <p>
+              „Tone" steht für den Gitarrenton, „Forge" für den Prozess des
+              Schmiedens und Erschaffens. Der Name beschreibt präzise, was wir
+              tun: Gitarrensounds systematisch formen.
+            </p>
+            <p class="brand-wordmark">ToneForge</p>
+          </div>
+
+          <div class="brand-item">
+            <div class="brand-number">02</div>
+            <h3>Bildmarke: Das Wave-Plektrum</h3>
+            <p>
+              Das Logo kombiniert das klassische Werkzeug des Gitarristen
+              (Plektrum) mit dem visuellen Symbol digitaler Signalverarbeitung
+              (Audio-Wellenform). Form und Funktion in einem Zeichen.
+            </p>
+            <img
+              class="brand-logo"
+              src="assets/img/logo-plektrum.svg"
+              alt="Bildmarke ToneForge: Ein Plektrum mit integrierter Audio-Wellenform"
+              width="80"
+              height="80"
+            />
+          </div>
+
+          <div class="brand-item">
+            <div class="brand-number">03</div>
+            <h3>Hörmarke: Der Ambient Swell</h3>
+            <p>
+              Ein kurzer, atmosphärischer Gitarren-Akkord, bearbeitet mit Reverb
+              und Delay. Das akustische Erkennungszeichen von ToneForge –
+              unverwechselbar und stimmungsvoll.
+            </p>
+            <audio
+              controls
+              aria-label="ToneForge Hörmarke – atmosphärischer Gitarrenakkord"
+            >
+              <source src="assets/audio/soundmarke.mp3" type="audio/mpeg" />
+              Ihr Browser unterstützt das Audio-Element nicht.
+            </audio>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="nizza-heading">
+        <h2 id="nizza-heading">Nizza-Klassifikation</h2>
+        <p>Unsere Marken sind den folgenden Nizza-Klassen zugeordnet:</p>
+        <table class="info-table" aria-label="Nizza-Klassen">
+          <tbody>
+            <tr>
+              <th scope="row">Klasse 9</th>
+              <td>
+                Herunterladbare Computersoftware; aufgezeichnete Ton-, Bild- und
+                Datendateien; digitale Audio-Presets und Impulse Responses
+                (<em>Hauptklasse</em>).
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Klasse 41</th>
+              <td>
+                Online-Bereitstellung nicht herunterladbarer Audioinhalte;
+                Schulungs- und Tutorial-Material rund um Homerecording.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Klasse 42</th>
+              <td>
+                Design und Entwicklung von Computersoftware; technologische
+                Beratung im Bereich digitaler Audio-Signalverarbeitung.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="card" aria-labelledby="pruefung-heading">
+        <h2 id="pruefung-heading">Markenrechtliche Prüfung</h2>
+        <p>
+          Um Markenrechtsverletzungen auszuschließen, wurden folgende Maßnahmen
+          getroffen. Die Recherche erfolgte über EUIPO eSearch, TMview und
+          Madrid Monitor.
+        </p>
         <ul>
-          <li style="margin-bottom: 1rem">
-            <strong>1. Wortmarke: "ToneForge"</strong><br />
-            Der Name beschreibt den Prozess der systematischen Klangerstellung
-            ("Forge" für Schmieden/Erstellen, "Tone" für den Gitarrenton).
-          </li>
-          <li style="margin-bottom: 1rem">
-            <strong>2. Bildmarke: Das Wave-Plektrum</strong><br />
-            Das Logo kombiniert das klassische Werkzeug des Gitarristen
-            (Plektrum) mit dem visuellen Symbol digitaler Signalverarbeitung
-            (Audio-Wellenform).
-            <div style="margin-top: 10px">
-              <img
-                src="assets/logo-plektrum.png"
-                alt="Bildmarke ToneForge: Ein Plektrum mit integrierter Audio-Wellenform"
-                style="max-width: 150px"
-              />
-            </div>
+          <li>
+            <strong>Wortwahl:</strong> Es wurden keine geschützten Begriffe von
+            Hardware-Herstellern (z.&nbsp;B. Fender, Gibson, Fractal, Kemper)
+            verwendet. Eine Suche nach „ToneForge" in Klasse 9 ergab keine
+            kollidierenden EU-Eintragungen im Bereich Musiksoftware.
           </li>
           <li>
-            <strong>3. Hörmarke: Der Ambient-Swell</strong><br />
-            Als akustisches Erkennungszeichen dient ein kurzer, atmosphärischer
-            Gitarren-Akkord, der mit Nachhall- und Verzögerungseffekten
-            (Reverb/Delay) bearbeitet wurde.
-            <div style="margin-top: 10px">
-              <audio controls aria-label="ToneForge Hörmarke">
-                <source src="assets/soundmarke.mp3" type="audio/mpeg" />
-                Ihr Browser unterstützt das Audio-Element nicht.
-              </audio>
-            </div>
+            <strong>Bildwahl:</strong> Das Logo basiert auf einer generischen
+            Plektrum-Form und bildet keine geschützten Produktdesigns ab. Die
+            Grafik entstammt Pixabay (Pixabay-Lizenz, kommerzielle Nutzung
+            erlaubt).
+          </li>
+          <li>
+            <strong>Farbwahl:</strong> Das Akzent-Orange (#E8521A) ist keiner
+            bekannten Farbmarke im Bereich Musiksoftware zugeordnet.
+          </li>
+          <li>
+            <strong>Formwahl:</strong> Die Plektrum-Form ist als generische Form
+            im Bereich Musikzubehör nicht schutzfähig und nicht eingetragen.
+          </li>
+          <li>
+            <strong>Positionswahl:</strong> Logo-Platzierung links und
+            Navigation rechts folgt einer allgemein üblichen Konvention und
+            verletzt keine Positionsmarken.
           </li>
         </ul>
       </section>
 
-      <section class="product-card">
-        <h2>Markenrechtliche Prüfung</h2>
-        <p>
-          Um Markenrechtsverletzungen auszuschließen, wurden folgende Maßnahmen
-          getroffen:
-        </p>
-        <ul>
-          <li>
-            <strong>Wortwahl:</strong> Es werden keine rechtlich geschützten
-            Begriffe von Hardware-Herstellern für die Produktbezeichnungen
-            verwendet. Die Datenbanken EUIPO eSearch und TMview wurden
-            konsultiert.
-          </li>
-          <li>
-            <strong>Bildwahl:</strong> Das Logo basiert auf einer generischen
-            Formgebung und bildet keine markenrechtlich geschützten
-            Produktdesigns (wie spezifische Kopfplatten von Instrumenten) ab.
-          </li>
-        </ul>
+      <section class="card" aria-labelledby="unternehmen-heading">
+        <h2 id="unternehmen-heading">Das Unternehmen</h2>
+        <table class="info-table" aria-label="Unternehmensdaten">
+          <tbody>
+            <tr>
+              <th scope="row">Name</th>
+              <td>ToneForge Audio GmbH</td>
+            </tr>
+            <tr>
+              <th scope="row">Gründung</th>
+              <td>2026</td>
+            </tr>
+            <tr>
+              <th scope="row">Standort</th>
+              <td>Wien, Österreich</td>
+            </tr>
+            <tr>
+              <th scope="row">Mitarbeitende</th>
+              <td>3 (Kleinstunternehmen gem. § 6 BaFG)</td>
+            </tr>
+            <tr>
+              <th scope="row">Zielgruppe</th>
+              <td>Homerecording-Gitarristen, Live-Musiker, Produzent:innen</td>
+            </tr>
+            <tr>
+              <th scope="row">Geschäftsmodell</th>
+              <td>Einmalkauf (Royalty-free Digital Download)</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
 
     <footer>
-      <nav aria-label="Fußzeilennavigation">
-        <ul>
-          <li><a href="lizenz.html">Lizenz</a></li>
-          <li><a href="datenschutz.html">Datenschutz</a></li>
-          <li><a href="kontakt.html">Impressum</a></li>
-          <li><a href="credits.html">Urheberrecht / Credits</a></li>
-          <li><a href="barrierefreiheit.html">Barrierefreiheit</a></li>
-        </ul>
-      </nav>
-      <p>&copy; 2026 ToneForge Audio GmbH</p>
+      <div class="footer-inner">
+        <nav aria-label="Fußzeilennavigation">
+          <ul>
+            <li><a href="lizenz.html">Lizenz</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="kontakt.html">Impressum</a></li>
+            <li><a href="credits.html">Credits</a></li>
+            <li><a href="barrierefreiheit.html">Barrierefreiheit</a></li>
+          </ul>
+        </nav>
+        <p class="footer-copy">
+          &copy; 2026 ToneForge Audio GmbH · Wien, Österreich
+        </p>
+      </div>
     </footer>
   </body>
 </html>

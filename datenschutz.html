@@ -7,116 +7,210 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
+
     <header>
-      <nav aria-label="Hauptnavigation">
-        <a href="index.html" class="logo">ToneForge</a>
-        <ul>
-          <li><a href="index.html">Shop</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-      </nav>
+      <div class="nav-inner">
+        <a
+          href="index.html"
+          class="logo"
+          aria-label="ToneForge – Zur Startseite"
+          >Tone<span>Forge</span></a
+        >
+        <nav aria-label="Hauptnavigation">
+          <ul>
+            <li><a href="index.html">Shop</a></li>
+            <li><a href="about.html">Über Uns</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
+    <main id="main-content">
+      <p class="section-label">Rechtliches</p>
       <h1>Datenschutzerklärung</h1>
-      <p>
-        Der Schutz deiner persönlichen Daten ist uns ein großes Anliegen.
-        Nachfolgend informieren wir dich darüber, welche Daten wir im Rahmen
-        unseres Webshops erheben und wie wir diese verarbeiten.
+      <p class="intro">
+        Der Schutz deiner persönlichen Daten ist uns ein wichtiges Anliegen.
+        Nachfolgend informieren wir dich gemäß Art. 13 DSGVO darüber, welche
+        Daten wir erheben und wie wir diese verarbeiten.
       </p>
 
-      <section class="product-card" style="margin-top: 2rem">
-        <h2>1. Verantwortlicher für die Datenverarbeitung</h2>
-        <p>
-          ToneForge Audio GmbH<br />
+      <section class="card" aria-labelledby="verantwortlicher-heading">
+        <h2 id="verantwortlicher-heading">
+          1. Verantwortlicher für die Datenverarbeitung
+        </h2>
+        <address class="address-block">
+          <strong>ToneForge Audio GmbH</strong><br />
           Musterstraße 42 / WG 3<br />
           1010 Wien, Österreich<br />
-          E-Mail: privacy@toneforge.at
-        </p>
+          E-Mail: <a href="mailto:privacy@toneforge.at">privacy@toneforge.at</a
+          ><br />
+          Telefon: +43 1 234 56 78
+        </address>
       </section>
 
-      <section class="product-card">
-        <h2>2. Datenerhebung beim Webshop-Kauf (Mock-Prozess)</h2>
+      <section class="card" aria-labelledby="kauf-heading">
+        <h2 id="kauf-heading">2. Datenerhebung beim Webshop-Kauf</h2>
         <p>
           Wenn du in unserem Shop digitale Presets erwirbst, verarbeiten wir die
           von dir eingegebenen Bestands- und Kontaktdaten (Name, E-Mail-Adresse,
-          Rechnungsadresse) zur Vertragserfüllung gemäß Art. 6 Abs. 1 lit. b
-          DSGVO.
+          Rechnungsadresse) zur Vertragserfüllung gemäß
+          <strong>Art. 6 Abs. 1 lit. b DSGVO</strong>.
         </p>
         <p>
+          Die Speicherdauer richtet sich nach den gesetzlichen
+          Aufbewahrungspflichten (österreichisches Steuerrecht: 7 Jahre).
+        </p>
+        <p class="note-small">
           <strong>Hinweis zum Übungsbetrieb:</strong> Da es sich um ein
-          Programmierbeispiel handelt, werden eingegebene Daten nicht dauerhaft
-          in einer Datenbank gespeichert oder verarbeitet. Die
-          Zahlungsabwicklung über Drittanbieter (z. B. Stripe oder PayPal) ist
-          komplett gemockt – es fließen keine echten Zahlungsdaten.
+          Lehrprojekt handelt, werden eingegebene Daten nicht dauerhaft
+          gespeichert. Die Zahlungsabwicklung ist vollständig gemockt – es
+          fließen keine echten Zahlungsdaten.
         </p>
       </section>
 
-      <section class="product-card">
-        <h2>3. Kontaktformular</h2>
+      <section class="card" aria-labelledby="kontakt-heading">
+        <h2 id="kontakt-heading">3. Kontaktformular</h2>
         <p>
-          Wenn du uns per Kontaktformular oder E-Mail eine Support-Anfrage zu
-          unseren Presets zukommen lässt, werden deine Angaben zwecks
-          Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns
-          gespeichert (Art. 6 Abs. 1 lit. f DSGVO – berechtigtes Interesse).
+          Wenn du uns per Kontaktformular eine Anfrage schickst, werden deine
+          Angaben zwecks Bearbeitung der Anfrage und für mögliche Rückfragen
+          gespeichert (<strong>Art. 6 Abs. 1 lit. f DSGVO</strong> –
+          berechtigtes Interesse).
+        </p>
+        <p>
+          Folgende Daten werden erhoben: Name, E-Mail-Adresse,
+          Nachrichteninhalt. Die Daten werden nach abschließender Bearbeitung
+          gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten bestehen.
         </p>
       </section>
 
-      <section class="product-card">
-        <h2>4. Cookies und Warenkorb-Funktion</h2>
+      <section class="card" aria-labelledby="cookies-heading">
+        <h2 id="cookies-heading">4. Cookies und Warenkorb-Funktion</h2>
         <p>
-          Unsere Website verwendet technisch notwendige Cookies. Diese sind
-          kleine Textdateien, die auf deinem Endgerät gespeichert werden. Sie
-          dienen ausschließlich dazu, den Zustand deines fiktiven Warenkorbs
-          während deines Besuchs zu speichern (Art. 6 Abs. 1 lit. f DSGVO).
+          Unsere Website verwendet ausschließlich
+          <strong>technisch notwendige Cookies</strong>, um den Zustand deines
+          Warenkorbs während des Besuchs zu speichern. Diese Cookies sind für
+          die Grundfunktionalität des Shops erforderlich und bedürfen keiner
+          gesonderten Einwilligung (<strong>Art. 6 Abs. 1 lit. f DSGVO</strong
+          >).
         </p>
         <p>
-          Du kannst deinen Browser so einstellen, dass er dich über das Setzen
-          von Cookies informiert oder diese generell blockiert. Bei der
-          Blockierung notwendiger Cookies kann die Funktionalität des Shops
-          eingeschränkt sein.
+          Wir setzen <strong>keine Tracking-Cookies</strong> von Drittanbietern
+          und führen kein personalisiertes Profiling durch. Du kannst Cookies in
+          deinen Browser-Einstellungen deaktivieren, was jedoch die
+          Funktionalität des Shops einschränken kann.
         </p>
       </section>
 
-      <section class="product-card">
-        <h2>5. Web-Analyse (Gemockt)</h2>
+      <section class="card" aria-labelledby="analyse-heading">
+        <h2 id="analyse-heading">5. Web-Analyse (Gemockt)</h2>
         <p>
           Zur statistischen Auswertung der Besucherströme nutzen wir ein
-          datenschutzfreundliches Analyse-Tool (z. B. eine gemockte
-          Matomo-Instanz). Die Daten werden ausschließlich in anonymisierter
-          Form (gekürzte IP-Adressen) verarbeitet. Es werden keine
-          personenbezogenen Profile erstellt und keine Tracking-Cookies von
-          Drittanbietern gesetzt.
+          datenschutzfreundliches Analyse-Tool (simulierte Matomo-Instanz,
+          selbst gehostet). Dabei werden:
+        </p>
+        <ul>
+          <li>IP-Adressen anonymisiert (Kürzung auf 2 Oktette)</li>
+          <li>keine personenbezogenen Profile erstellt</li>
+          <li>keine Tracking-Cookies von Drittanbietern gesetzt</li>
+          <li>
+            Daten ausschließlich auf eigenen Servern in der EU verarbeitet
+          </li>
+        </ul>
+        <p>
+          Rechtsgrundlage: <strong>Art. 6 Abs. 1 lit. f DSGVO</strong>
+          (berechtigtes Interesse an der Optimierung des Webangebots).
         </p>
       </section>
 
-      <section class="product-card">
-        <h2>6. Deine Rechte</h2>
+      <section class="card" aria-labelledby="extern-heading">
+        <h2 id="extern-heading">6. Externe Dienste (Google Fonts)</h2>
         <p>
-          Dir stehen grundsätzlich die Rechte auf Auskunft, Berichtigung,
-          Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und
-          Widerspruch zu. Wenn du glaubst, dass die Verarbeitung deiner Daten
-          gegen das Datenschutzrecht verstößt, kannst du dich bei der
-          zuständigen Aufsichtsbehörde beschweren (in Österreich ist dies die
-          Datenschutzbehörde, DSB).
+          Diese Website lädt Schriftarten (Bebas Neue, DM Sans) über Google
+          Fonts, einen Dienst der Google LLC, USA. Dabei wird deine IP-Adresse
+          an Google-Server übermittelt (<strong
+            >Art. 6 Abs. 1 lit. f DSGVO</strong
+          >
+          – berechtigtes Interesse an einer optimalen Darstellung der Website).
         </p>
+        <p>
+          Weitere Informationen zur Datenverarbeitung durch Google:
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+            >policies.google.com/privacy</a
+          >
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="rechte-heading">
+        <h2 id="rechte-heading">7. Deine Rechte</h2>
+        <p>Dir stehen folgende Rechte zu:</p>
+        <ul>
+          <li>
+            <strong>Auskunft</strong> (Art. 15 DSGVO): Welche Daten verarbeiten
+            wir über dich?
+          </li>
+          <li>
+            <strong>Berichtigung</strong> (Art. 16 DSGVO): Korrektur unrichtiger
+            Daten
+          </li>
+          <li>
+            <strong>Löschung</strong> (Art. 17 DSGVO): „Recht auf
+            Vergessenwerden"
+          </li>
+          <li>
+            <strong>Einschränkung</strong> (Art. 18 DSGVO): Verarbeitung
+            einschränken
+          </li>
+          <li><strong>Datenübertragbarkeit</strong> (Art. 20 DSGVO)</li>
+          <li>
+            <strong>Widerspruch</strong> (Art. 21 DSGVO): gegen
+            interessensbasierte Verarbeitung
+          </li>
+          <li>
+            <strong>Widerruf</strong> einer erteilten Einwilligung mit Wirkung
+            für die Zukunft
+          </li>
+        </ul>
+        <p>
+          Zur Ausübung deiner Rechte wende dich an:
+          <a href="mailto:privacy@toneforge.at">privacy@toneforge.at</a>
+        </p>
+        <p>
+          Du hast außerdem das Recht, dich bei der zuständigen Aufsichtsbehörde
+          zu beschweren:
+          <strong>Österreichische Datenschutzbehörde (DSB)</strong>,
+          <a
+            href="https://www.dsb.gv.at"
+            target="_blank"
+            rel="noopener noreferrer"
+            >www.dsb.gv.at</a
+          >
+        </p>
+        <p class="note-small">Stand dieser Erklärung: Mai 2026</p>
       </section>
     </main>
 
     <footer>
-      <nav aria-label="Fußzeilennavigation">
-        <ul>
-          <li><a href="lizenz.html">Lizenz</a></li>
-          <li>
-            <a href="datenschutz.html" aria-current="page">Datenschutz</a>
-          </li>
-          <li><a href="kontakt.html">Impressum</a></li>
-          <li><a href="credits.html">Urheberrecht / Credits</a></li>
-          <li><a href="barrierefreiheit.html">Barrierefreiheit</a></li>
-        </ul>
-      </nav>
-      <p>&copy; 2026 ToneForge Audio GmbH</p>
+      <div class="footer-inner">
+        <nav aria-label="Fußzeilennavigation">
+          <ul>
+            <li><a href="lizenz.html">Lizenz</a></li>
+            <li>
+              <a href="datenschutz.html" aria-current="page">Datenschutz</a>
+            </li>
+            <li><a href="kontakt.html">Impressum</a></li>
+            <li><a href="credits.html">Credits</a></li>
+            <li><a href="barrierefreiheit.html">Barrierefreiheit</a></li>
+          </ul>
+        </nav>
+        <p class="footer-copy">
+          &copy; 2026 ToneForge Audio GmbH · Wien, Österreich
+        </p>
+      </div>
     </footer>
   </body>
 </html>
