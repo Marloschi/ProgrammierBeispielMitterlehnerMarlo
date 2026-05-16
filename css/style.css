@@ -6,7 +6,7 @@
   --surface: #1a1a1a;
   --surface-2: #242424;
   --text-color: #e8e8e8;
-  --text-muted: #b3b3b3;
+  --text-muted: #c0c0c0; /* ← aufgehellt von #b3b3b3 */
   --accent-color: #e8521a;
   --accent-hover: #ff6b35;
   --accent-dim: rgba(232, 82, 26, 0.15);
@@ -49,7 +49,7 @@ img {
 }
 
 a {
-  color: var(--accent-color);
+  color: #ff8c5a; /* ← helleres Orange für Links: besserer Kontrast */
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: color var(--transition);
@@ -115,7 +115,7 @@ header {
   line-height: 1;
 }
 .logo span {
-  color: var(--accent-color);
+  color: #ff8c5a; /* ← helleres Orange */
 }
 .logo:hover {
   color: #fff;
@@ -144,7 +144,7 @@ nav a:hover {
   background: var(--surface-2);
 }
 nav a[aria-current="page"] {
-  color: var(--accent-color);
+  color: #ff8c5a; /* ← helleres Orange für aktiven Nav-Link */
   background: var(--accent-dim);
 }
 
@@ -223,10 +223,11 @@ li {
   padding: 2rem;
 }
 
+/* ── Badge ───────────────────────────────────────── */
 .badge {
   display: inline-block;
-  background: var(--accent-dim);
-  color: var(--accent-color);
+  background: var(--surface-2);
+  color: #ffb899; /* ← helles Orange: guter Kontrast auf dunklem Bg */
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -234,7 +235,7 @@ li {
   padding: 0.25rem 0.75rem;
   border-radius: 99px;
   margin-bottom: 1rem;
-  border: 1px solid rgba(232, 82, 26, 0.3);
+  border: 1px solid rgba(232, 82, 26, 0.5);
 }
 
 .product-meta {
@@ -254,7 +255,7 @@ li {
 .price {
   font-family: var(--font-display);
   font-size: 2rem;
-  color: var(--green);
+  color: #6fcf73; /* ← helleres Grün für besseren Kontrast */
   letter-spacing: 0.03em;
   margin: 1.25rem 0;
 }
@@ -306,7 +307,7 @@ button:active,
 label {
   font-weight: 500;
   font-size: 0.9rem;
-  color: var(--text-color);
+  color: var(--text-color); /* ← volle Textfarbe statt muted */
   letter-spacing: 0.02em;
 }
 
@@ -370,13 +371,13 @@ textarea {
 }
 .status-partial {
   background: rgba(255, 180, 0, 0.15);
-  color: #ffb400;
-  border: 1px solid rgba(255, 180, 0, 0.3);
+  color: #ffd166; /* ← helleres Gelb: besser lesbar */
+  border: 1px solid rgba(255, 180, 0, 0.4);
 }
 .status-ok {
   background: rgba(76, 175, 80, 0.15);
-  color: var(--green);
-  border: 1px solid rgba(76, 175, 80, 0.3);
+  color: #6fcf73; /* ← helleres Grün */
+  border: 1px solid rgba(76, 175, 80, 0.4);
 }
 
 /* ── Brand Section (About) ───────────────────────── */
@@ -398,8 +399,8 @@ textarea {
 .brand-number {
   font-family: var(--font-display);
   font-size: 2.5rem;
-  color: var(--accent-color);
-  opacity: 0.4;
+  color: #ff8c5a; /* ← helleres Orange */
+  opacity: 0.5;
   line-height: 1;
 }
 .brand-wordmark {
@@ -430,12 +431,12 @@ textarea {
   border-bottom: none;
 }
 .feature-list .icon-ok {
-  color: var(--green);
+  color: #6fcf73; /* ← helleres Grün */
   flex-shrink: 0;
   margin-top: 2px;
 }
 .feature-list .icon-no {
-  color: #e55;
+  color: #ff8080; /* ← helleres Rot */
   flex-shrink: 0;
   margin-top: 2px;
 }
@@ -522,7 +523,7 @@ footer nav a:hover {
   color: var(--text-color);
 }
 footer nav a[aria-current="page"] {
-  color: var(--accent-color);
+  color: #ff8c5a; /* ← helleres Orange */
   background: transparent;
 }
 .footer-copy {
@@ -540,11 +541,11 @@ footer nav a[aria-current="page"] {
 
 /* ── Section label ───────────────────────────────── */
 .section-label {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--accent-color);
+  color: #ff8c5a; /* ← helleres Orange für besseren Kontrast */
   margin-bottom: 0.5rem;
 }
 
