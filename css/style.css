@@ -64,10 +64,11 @@ a:hover {
   top: -100px;
   left: 1rem;
   padding: 0.75rem 1.25rem;
-  background: var(--accent-color);
-  color: #fff;
+  background: #fff; /* ← weißer Hintergrund */
+  color: #0e0e0e; /* ← schwarzer Text: 19:1 Kontrast */
   font-weight: 700;
   border-radius: var(--radius);
+  border: 2px solid var(--accent-color); /* ← orange Rand als Akzent */
   z-index: 9999;
   text-decoration: none;
   transition: top 0.2s;
