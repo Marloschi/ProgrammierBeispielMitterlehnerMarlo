@@ -273,7 +273,7 @@ button,
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: var(--accent-color);
+  background-color: #cc4515; /* ← dunkleres Orange: 4.7:1 mit weiß ✅ */
   color: #fff;
   border: none;
   padding: 0.75rem 1.75rem;
@@ -290,7 +290,7 @@ button,
 }
 button:hover,
 .btn:hover {
-  background-color: var(--accent-hover);
+  background-color: #b33f12; /* ← noch dunkler für Hover: 5.8:1 ✅ */
   transform: translateY(-1px);
 }
 button:active,
